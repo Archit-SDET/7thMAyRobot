@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-23T16:15:22.842073" rpa="false" schemaversion="5">
+<suite id="s1" name="WorkingWithAlerts" source="C:\Users\archit.kumar\PycharmProjects\PythonTutorial\Travels\WorkingWithAlerts.robot">
+<test id="s1-t1" name="TC to demonstrate RadioButton Operation Keywords in Robot Framework" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-23T16:15:23.220363" level="INFO">Opening browser 'Chrome' to base url 'https://www.w3schools.com/js/tryit.asp?filename=tryjs_prompt'.</msg>
+<arg>${Url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-23T16:15:23.220363" elapsed="32.667584"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-23T16:15:55.887947" elapsed="0.037163"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-23T16:15:58.933294" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-23T16:15:55.925110" elapsed="3.008184"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2024-04-23T16:15:58.933294" level="INFO">Selecting frame 'id: iframeResult'.</msg>
+<arg>id: iframeResult</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2024-04-23T16:15:58.933294" elapsed="0.043957"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-23T16:15:58.977251" level="INFO">Clicking element 'xpath: /html/body/button'.</msg>
+<arg>xpath: /html/body/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-23T16:15:58.977251" elapsed="0.128580"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-23T16:16:04.106156" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-23T16:15:59.106011" elapsed="5.000145"/>
+</kw>
+<kw name="Input Text Into Alert" owner="SeleniumLibrary">
+<arg>Archit</arg>
+<arg>Accept</arg>
+<arg>5s</arg>
+<doc>Types the given ``text`` into an input field in an alert.</doc>
+<status status="PASS" start="2024-04-23T16:16:04.107339" elapsed="0.083998"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-04-23T16:16:04.191337" elapsed="3.427889"/>
+</kw>
+<doc>TC to demonstrate RadioButton Operation Keywords in Robot Framework</doc>
+<status status="PASS" start="2024-04-23T16:15:23.220363" elapsed="44.398863"/>
+</test>
+<status status="PASS" start="2024-04-23T16:15:22.842073" elapsed="44.780771"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="WorkingWithAlerts">WorkingWithAlerts</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

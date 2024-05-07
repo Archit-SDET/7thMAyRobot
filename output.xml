@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.7 on win32)" generated="2024-05-07T12:12:41.362535" rpa="false" schemaversion="5">
+<suite id="s1" name="PythonTutorial" source="C:\Users\archit.kumar\PycharmProjects\PythonTutorial">
+<suite id="s1-s1" name="Travels" source="C:\Users\archit.kumar\PycharmProjects\PythonTutorial\Travels">
+<suite id="s1-s1-s1" name="Test1" source="C:\Users\archit.kumar\PycharmProjects\PythonTutorial\Travels\Test1.robot">
+<test id="s1-s1-s1-t1" name="ValidateLoop" line="5">
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-05-07T12:12:41.637486" level="INFO">@{Numbers} = [ 1 | 2 | 3 | 4 | 5 ]</msg>
+<var>@{Numbers}</var>
+<arg>1</arg>
+<arg>2</arg>
+<arg>3</arg>
+<arg>4</arg>
+<arg>5</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-05-07T12:12:41.637486" elapsed="0.000000"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${Number}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-05-07T12:12:41.637486" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="'${Number}'=='4'">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Enough</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-05-07T12:12:41.637486" elapsed="0.000000"/>
+</kw>
+<break>
+<status status="NOT RUN" start="2024-05-07T12:12:41.637486" elapsed="0.000000"/>
+</break>
+<status status="NOT RUN" start="2024-05-07T12:12:41.637486" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-05-07T12:12:41.637486" elapsed="0.000000"/>
+</if>
+<var name="${Number}">1</var>
+<status status="PASS" start="2024-05-07T12:12:41.637486" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${Number}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-05-07T12:12:41.637486" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="'${Number}'=='4'">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Enough</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-05-07T12:12:41.637486" elapsed="0.000000"/>
+</kw>
+<break>
+<status status="NOT RUN" start="2024-05-07T12:12:41.637486" elapsed="0.000000"/>
+</break>
+<status status="NOT RUN" start="2024-05-07T12:12:41.637486" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-05-07T12:12:41.637486" elapsed="0.000000"/>
+</if>
+<var name="${Number}">2</var>
+<status status="PASS" start="2024-05-07T12:12:41.637486" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${Number}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-05-07T12:12:41.637486" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="'${Number}'=='4'">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Enough</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-05-07T12:12:41.637486" elapsed="0.000000"/>
+</kw>
+<break>
+<status status="NOT RUN" start="2024-05-07T12:12:41.637486" elapsed="0.000000"/>
+</break>
+<status status="NOT RUN" start="2024-05-07T12:12:41.637486" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-05-07T12:12:41.637486" elapsed="0.000000"/>
+</if>
+<var name="${Number}">3</var>
+<status status="PASS" start="2024-05-07T12:12:41.637486" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${Number}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-05-07T12:12:41.637486" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="'${Number}'=='4'">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Enough</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-05-07T12:12:41.637486" elapsed="0.000000"/>
+</kw>
+<break>
+<status status="PASS" start="2024-05-07T12:12:41.637486" elapsed="0.000000"/>
+</break>
+<status status="PASS" start="2024-05-07T12:12:41.637486" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-05-07T12:12:41.637486" elapsed="0.000000"/>
+</if>
+<var name="${Number}">4</var>
+<status status="PASS" start="2024-05-07T12:12:41.637486" elapsed="0.000000"/>
+</iter>
+<var>${Number}</var>
+<value>@{Numbers}</value>
+<status status="PASS" start="2024-05-07T12:12:41.637486" elapsed="0.000000"/>
+</for>
+<status status="PASS" start="2024-05-07T12:12:41.637486" elapsed="0.000000"/>
+</test>
+<status status="PASS" start="2024-05-07T12:12:41.388017" elapsed="0.249469"/>
+</suite>
+<status status="PASS" start="2024-05-07T12:12:41.383971" elapsed="0.253515"/>
+</suite>
+<status status="PASS" start="2024-05-07T12:12:41.366698" elapsed="0.270788"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="PythonTutorial">PythonTutorial</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Travels">PythonTutorial.Travels</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Test1">PythonTutorial.Travels.Test1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

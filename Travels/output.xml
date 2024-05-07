@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-03T15:49:11.131361" rpa="false" schemaversion="5">
+<suite id="s1" name="DDTCSV" source="C:\Users\archit.kumar\PycharmProjects\PythonTutorial\Travels\DDTCSV.robot">
+<kw name="Start test case" owner="Common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-03T15:49:25.145321" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>https://www.saucedemo.com/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-03T15:49:25.145321" elapsed="6.138862"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-03T15:49:31.284183" elapsed="0.068558"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-03T15:49:32.353015" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-03T15:49:31.352741" elapsed="1.000274"/>
+</kw>
+<status status="PASS" start="2024-05-03T15:49:25.145321" elapsed="7.207694"/>
+</kw>
+<test id="s1-t1" name="Verify Login Fails with Invalid Creds" line="18">
+<kw name="Invalid Login Scenarios">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-03T15:49:32.353015" level="INFO">Typing text '' into text field 'id: user-name'.</msg>
+<arg>${userid}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-03T15:49:32.353015" elapsed="0.232336"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-03T15:49:32.585351" level="INFO">Typing text '' into text field 'xpath: //input[@id='password']'.</msg>
+<arg>${userpass}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-03T15:49:32.585351" elapsed="0.163797"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-03T15:49:32.757161" level="INFO">Clicking button 'id: login-button'.</msg>
+<arg>${loginButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-03T15:49:32.757161" elapsed="0.149402"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-03T15:49:34.910233" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-03T15:49:32.910131" elapsed="2.000102"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2024-05-03T15:49:34.970436" level="INFO">Element '//body/div[@id='root']/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[3]/h3[1]' contains text 'Epic sadface: Username is required'.</msg>
+<arg>//body/div[@id='root']/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[3]/h3[1]</arg>
+<arg>${error-msg}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2024-05-03T15:49:34.910233" elapsed="0.060203"/>
+</kw>
+<arg>username=</arg>
+<arg>password=</arg>
+<arg>error-msg=Epic sadface: Username is required</arg>
+<status status="PASS" start="2024-05-03T15:49:32.353015" elapsed="2.617421"/>
+</kw>
+<status status="PASS" start="2024-05-03T15:49:32.353015" elapsed="2.699221"/>
+</test>
+<test id="s1-t2" name="Verify Login Fails with Invalid Creds" line="18">
+<kw name="Invalid Login Scenarios">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-03T15:49:35.205745" level="INFO">Typing text ' standard_us' into text field 'id: user-name'.</msg>
+<arg>${userid}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-03T15:49:35.205745" elapsed="0.249786"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-03T15:49:35.455531" level="INFO">Typing text 'secret_sauce' into text field 'xpath: //input[@id='password']'.</msg>
+<arg>${userpass}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-03T15:49:35.455531" elapsed="0.173117"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-03T15:49:35.628648" level="INFO">Clicking button 'id: login-button'.</msg>
+<arg>${loginButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-03T15:49:35.628648" elapsed="0.066010"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-03T15:49:37.695357" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-03T15:49:35.694658" elapsed="2.000699"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2024-05-03T15:49:38.273566" level="INFO">Element '//body/div[@id='root']/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[3]/h3[1]' contains text 'Epic sadface: Username and password do not match any user in this service'.</msg>
+<arg>//body/div[@id='root']/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[3]/h3[1]</arg>
+<arg>${error-msg}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2024-05-03T15:49:37.695357" elapsed="0.578209"/>
+</kw>
+<arg>username= standard_us</arg>
+<arg>password=secret_sauce</arg>
+<arg>error-msg=Epic sadface: Username and password do not match any user in this service</arg>
+<status status="PASS" start="2024-05-03T15:49:35.205745" elapsed="3.067821"/>
+</kw>
+<status status="PASS" start="2024-05-03T15:49:35.205745" elapsed="3.131785"/>
+</test>
+<kw name="Close test case" owner="Common" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-03T15:49:38.414006" elapsed="3.601629"/>
+</kw>
+<status status="PASS" start="2024-05-03T15:49:38.414006" elapsed="3.601629"/>
+</kw>
+<status status="PASS" start="2024-05-03T15:49:11.146919" elapsed="30.868716"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="DDTCSV">DDTCSV</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-05-03T15:49:35.205745" level="WARN">Multiple tests with name 'Verify Login Fails with Invalid Creds' executed in suite 'DDTCSV'.</msg>
+</errors>
+</robot>
